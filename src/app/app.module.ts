@@ -17,6 +17,7 @@ import { MyContentComponent } from './my-content/my-content.component';
 import { YourContentComponent } from './your-content/your-content.component';
 import { ContentComponent } from './content/content.component';
 import { CommonComponent } from './common/common.component';
+import { ContentTwoComponent } from './content-two/content-two.component';
 
 
 
@@ -40,7 +41,9 @@ export const ROUTES: Routes = [
 		loadChildren:'app/two/two.module#TwoModule'
   },
   { path: 'Your-content', component: YourContentComponent},
-  { path: 'testone', component: MyContentComponent}
+  { path: 'testone', component: MyContentComponent},
+  { path: 'contenttwo', component: ContentTwoComponent}
+  
   
  
   ]
@@ -56,7 +59,8 @@ export const ROUTES: Routes = [
     MyContentComponent,
     YourContentComponent,
     ContentComponent,
-    CommonComponent
+    CommonComponent,
+    ContentTwoComponent
   ],
   imports: [
     BrowserModule,

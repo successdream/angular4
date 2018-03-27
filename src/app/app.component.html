@@ -4,9 +4,15 @@
   <a routerLink="http"  routerLinkActive="active">HTTP</a>
   <a routerLink="Your-content">你的内容</a>
   <a routerLink="testone">我的内容</a>
+  <a routerLink="contenttwo">第二个内容</a>
   
   
-  <div ></div>
+
+  <app-content-two>
+  		<div class="header" style="border: 1px solid red; margin: 5px;">Card Header</div>
+		<div class="body"   style="border: 1px solid green; margin: 5px;">Card Body</div>
+		<div class="footer" style="border: 1px solid blue; margin: 5px;">Card Footer</div>
+  </app-content-two>
   <!--change-->
   <div >这是哪里来的啊{{value}}</div>
    <router-outlet ></router-outlet>
