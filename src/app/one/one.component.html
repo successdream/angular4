@@ -1,0 +1,24 @@
+<p #text>
+  one works!
+ one的一次懒加载成功案例
+ 
+</p>
+<!--<div [style.background-color="'yellow'"]>它是{{wo}}</div>-->
+<div class="container" [ngSwitch]="wo">
+    <div *ngSwitchCase="'A'" >Var is A</div>
+    <div *ngSwitchCase="'B'">Var is B</div>
+    <div *ngSwitchCase="'C'">Var is C</div>
+    <div *ngSwitchDefault>Var is something else</div>
+</div>
+
+<div>
+   <span [ngStyle]="{color: 'red','font-size':you}" >
+      red text
+   </span>
+</div>
+<ng-template #hidden>
+  <p>You are not allowed to see our secret</p>
+</ng-template>
+<p *ngIf="shown; else hidden">
+  Our secret is being happy
+</p>

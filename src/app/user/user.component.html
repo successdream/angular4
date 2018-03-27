@@ -1,0 +1,33 @@
+   
+   <div class="box">
+   		 <h2 (click)='hello()' (click)='toggleSkills()'>大家好，我是{{name}}</h2>
+	    <p [ngClass]="{'p-a':true}" [style.font-size.px]="60">我来自<strong>{{address.province}}</strong>省,
+	      <strong>{{address.city}}</strong>市
+	    </p>
+	    <app-your-content>
+	    	<div>这个div是父组件投影到子组件的</div>
+	    </app-your-content>
+  
+   </div>
+   
+   
+   <a routerLink="your-content">我的内容</a>
+   <router-outlet  >
+   	  <div>这个div是父组件投影到子组件的</div>
+   </router-outlet>
+
+    <!--{{ showSkills ? "隐藏技能" : "显示技能" }}
+     <div *ngIf="showSkills">
+        <h3>我的技能</h3>
+        ...
+        <form (submit)="addSkill(skill.value)">
+            <label #add  [hidden]="fasle">添加技能</label>
+            <input type="text" #skill  [(ngModel)]="inputValue" name="first">
+            <h1>通过模板引用变量添加的{{skill.value}}</h1>
+        </form>
+        <h1  [ngStyle]="{color: 'white', 'background-color': 'blue'}">来自跟组件的人，名字叫做{{message}}</h1>
+        <button>按钮</button>
+        <h2>{{inputValue}}</h2>
+        <button (click)="child('这是孩子家的来人')">子向父传值 user</button>-->
+        <!--<div [title]="'你好'">你好</div>
+        <div  [title]="address.city">你们好</div>-->

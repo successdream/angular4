@@ -1,0 +1,38 @@
+<form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm.value)">
+	<div>
+		<label for="name">姓名</label>
+		<div class="input-box">
+			<input name="xingming" type="text" required id="name" [(ngModel)]="username" />
+			<span>{{username}}</span>
+		</div>
+	</div>
+	<div>
+		<label for="password">密码</label>
+		<div class="input-box">
+			<input type="text" name="password" required minlength="10" [(ngModel)]="password" #passWord="ngModel" />
+			<div *ngIf="passWord.errors?.required">请您输入用密码</div>
+			<div *ngIf="passWord.errors?.minlength">
+				用户名的长度必须大于 {{passWord.errors?.minlength.requiredLength}}，当前的长度为 {{passWord.errors?.minlength.actualLength}}
+			</div>
+
+		</div>
+	</div>
+	<div>
+		<label for="age">年龄</label>
+		<div class="input-box">
+			<input type="text" name="nianling" [(ngModel)]="age" id="age" />
+			<span>{{age}}</span>
+		</div>
+	</div>
+	<div>
+		<label for="email">邮箱</label>
+		<div class="input-box">
+			<input type="text" name="youxiang" [(ngModel)]="email" />
+			<span>{{email}}</span>
+		</div>
+
+	</div>
+	<!--{{p_c}}-->
+	<div>{{counter}}</div>
+	<button>提交</button>
+</form>

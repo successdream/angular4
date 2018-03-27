@@ -1,0 +1,22 @@
+:host{
+	margin-top: 60px;
+}
+.age{
+	color:"green";
+	font-size: 30px;
+	
+}
+.password{
+	color:"red";
+	font-size: 30px;
+}
+.name{
+	color:"blue";
+	font-size: 30px;
+}
+  input.ng-invalid {
+       border: 3px solid red;
+    }
+   input.ng-valid {
+       border: 3px solid green;
+    }
