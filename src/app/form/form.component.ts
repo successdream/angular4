@@ -13,10 +13,10 @@ export class FormComponent implements OnChanges , OnInit {
 	p_c:string;
 	  constructor(private route: ActivatedRoute) { }
 		 onSubmit(value) {
-	    console.dir(value);
+//	    console.dir(value);
 	  }
 	 ngOnChanges(changes: SimpleChanges){
-	 	 console.dir(changes['counter']);
+//	 	 console.dir(changes['counter']);
 	 }
 	
 	

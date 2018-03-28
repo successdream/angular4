@@ -12,9 +12,11 @@ export class OneComponent implements OnInit , AfterViewInit{
   constructor(public elementRef: ElementRef) { 
   }
 	ngAfterViewInit() {
-//  console.dir(this.text.nativeElement.innerHTML);
+		this.elementRef.nativeElement.querySelector("div").style.backgroundColor = 'darkcyan';
   }
   ngOnInit() {
+  
   }
+  
 
 }

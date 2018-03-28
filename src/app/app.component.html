@@ -1,13 +1,21 @@
-	 <a routerLink="members"  routerLinkActive="active">首页</a>
-  <a routerLink="user"  routerLinkActive="active">我的</a>
-  <a [routerLink]="['form','2']"  routerLinkActive="active">表单</a>
-  <a routerLink="http"  routerLinkActive="active">HTTP</a>
-  <a routerLink="Your-content">你的内容</a>
-  <a routerLink="testone">我的内容</a>
-  <a routerLink="contenttwo">第二个内容</a>
   
   
+  <div class="nav-bar">
+  	  <a routerLink="members"  routerLinkActive="active">首页</a>
+	  <a class="mine" routerLink="user"  routerLinkActive="active">我的</a>
+	  <a [routerLink]="['form','2']"  routerLinkActive="active">表单</a>
+	  <a routerLink="http"  routerLinkActive="active">HTTP</a>
+	  <a routerLink="Your-content">你的内容</a>
+	  <a routerLink="testone">我的内容</a>
+	  <a routerLink="contenttwo">第二个内容</a>
+	  <a routerLink="parentview">组件传值</a>
+	  <a class="parent-rxjs" routerLink="rxjsparent">父RXJS</a>
+  </div>
 
+  
+  
+  <div>底下是content-child中显示的元素</div> 
+ 
   <app-content-two>
   		<div class="header" style="border: 1px solid red; margin: 5px;">Card Header</div>
 		<div class="body"   style="border: 1px solid green; margin: 5px;">Card Body</div>

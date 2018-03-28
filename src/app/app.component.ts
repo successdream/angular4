@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component ,AfterContentInit,ContentChild} from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+	
 	message="APP组件";
   title = 'app';
   value:string;

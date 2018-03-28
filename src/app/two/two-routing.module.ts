@@ -3,9 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { TwoComponent } from './two.component';
 import { TestOneComponent } from '../test-one/test-one.component';
 import { TestTwoComponent } from '../test-two/test-two.component';
-
-
-
 const routes: Routes = [
 	{
 	   path: '',  

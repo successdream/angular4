@@ -1,3 +1,8 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
 .color-box{
 	height: 300px;
 }
@@ -9,4 +14,34 @@
 }
 .footer{
 	height: 100%;
+}
+/*顶部导航栏样式*/
+.nav-bar{
+	background-color: #999;
+	/*webkit内核浏览器必带*/
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	height: 100px;
+	align-content: space-around;
+
+	
+}
+.nav-bar a{
+	text-align: center;
+	display:inline-block;
+	color:#fff;
+	text-decoration: none;
+	background-color: skyblue;
+	width: 80px;
+
+}
+.nav-bar a:nth-child(-n+4){
+	margin-top:0px;
+
+}
+.mine{
+	
 }
