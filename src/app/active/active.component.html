@@ -1,0 +1,16 @@
+<p>
+  active works!
+</p>
+<section>
+	<button class="dmBtn" (click)="addComponent()">动态创建模块</button>
+	<button class="dmBtn" (click)="addComponent()">动态加载组件</button>
+	<section class="dmRoom" #dmroom></section>
+</section>
+<!--@ViewChild("dmroom",{read:ViewContainerRef}) dmRoom:ViewContainerRef
+			constructor(){
+				private crf:ComponentFactoryResolver;
+			};
+    	add(){
+				let com=this.crf.resolveComponentFactory(DY1Component);
+				this.dmRoom.createComponent(com);
+	    };-->

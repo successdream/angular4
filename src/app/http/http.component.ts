@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http'; // (1)
-import 'rxjs/add/operator/map'; // (2)
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
 interface Member {
     id: string;
     login: string;

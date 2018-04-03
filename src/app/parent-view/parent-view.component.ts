@@ -1,22 +1,28 @@
-import { Component, OnInit ,ViewChild,AfterViewInit } from '@angular/core';
-import { ViewChildComponent } from 'app/view-child/view-child.component';
+//import { Component, OnInit ,ViewChild,AfterViewInit ,ViewContainerRef ,TemplateRef,ElementRef} from '@angular/core';
+
+import { Component, TemplateRef, ViewChild, ViewContainerRef, AfterViewInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-parent-view',
-  templateUrl: './parent-view.component.html',
-  styleUrls: ['./parent-view.component.css']
+////  template: `
+////  <h1>Welcome to Angular World</h1>
+////  <template #tpl>
+////    <span>I am span in template</span>
+////  </template>
+//`,
+  templateUrl:'./parent-view.component.html'
 })
-export class ParentViewComponent implements OnInit ,AfterViewInit {
-	 
-	 @ViewChild(ViewChildComponent)
-   childCmp: ViewChildComponent;
-	
-	ngAfterViewInit (){
-      this.childCmp.name="这是父组件的值";
-	}
-  constructor() { }
+export class ParentViewComponent {
 
-  ngOnInit() {
-  }
+// @ViewChild('tpl')
+//tplRef: any;
+//
+//@ViewChild('tpl', { read: ViewContainerRef })
+//tplVcRef: ViewContainerRef;
+//ngAfterViewInit() {
+//  console.dir(this.tplVcRef);
+//  this.tplVcRef.createEmbeddedView(this.tplRef);
+//}
 
 }

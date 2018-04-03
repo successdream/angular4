@@ -29,6 +29,8 @@ import { RxjsParentComponent } from './rxjs-parent/rxjs-parent.component';
 
 
 
+
+
 export const ROUTES: Routes = [
   { path: '', redirectTo: '/members', pathMatch: 'full' },
   { path: 'user', component: UserComponent,
@@ -77,9 +79,10 @@ export const ROUTES: Routes = [
     ViewChildComponent,
     ParentViewComponent,
     RxjsChildComponent,
-    RxjsParentComponent,
+    RxjsParentComponent
   
   ],
+
   imports: [
     BrowserModule,
     FormsModule,
